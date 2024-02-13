@@ -1,0 +1,273 @@
+
+/* Navigation Bar */
+body{
+    margin:0;
+    padding:0;
+    font-family:system-ui;
+    background-color: whitesmoke;
+    height: 10vh;
+}
+
+nav{
+    background-color:yellow;
+    font-size: 1rem;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    color:darkslateblue;
+}
+
+nav li{
+    display:inline-block;
+    margin:0 8px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.logo a{
+    font-size:1.5rem;
+    font-weight: bolder;
+    color: red;
+}
+
+nav ul a:hover{
+    color:green;
+}
+
+.menu-line{
+    height:3px;
+    width:20px;
+    background-color: darkslateblue;
+   margin-bottom: 2px;
+}
+
+.menu{
+    cursor:pointer;
+    display:none;   
+}
+
+@media all and (max-width:640px){
+    nav{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav li{
+        display:block;
+        padding:10px ;
+    }
+    ul{
+        align-items: center;
+        padding:0;
+        display:none;
+    }
+
+    .logo{
+        align-self:flex-start;
+        margin:10px ;
+    }
+
+    .menu{
+        display:block;
+        position:absolute;
+        right:20px;
+        top:25px;
+    }
+
+    .showmenu{
+        display:block;
+    }
+    .para p{
+        width: 450px;
+        text-align: center;
+    }
+    
+}
+
+/*Index Page Content*/
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    color: darkgreen;
+}
+
+.para p{
+    text-align: center;
+    margin: auto;
+    width: 800px;
+    
+}
+
+p{
+    text-align: center;
+}
+
+/*Login Page*/
+
+.login{
+    width: 400px;
+    border: 5px solid violet;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 50px 0px 50px 0px;
+    background-color: white;
+}
+h3{
+    color: orange;
+    text-align: center;
+}
+.input label{
+    display: block;
+    margin-left: 30px ;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.input input{
+    width: 80%;
+    margin-left: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 0px;
+    border-bottom: 2px solid violet;
+    
+}
+button{
+    position: relative;
+    left: 40%;
+    margin-top: 20px;
+    padding: 8px;
+    width: 20%;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+button a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+form p{
+    margin: 20px 10px;
+    color: grey;
+}
+form p a{
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+.input input:focus{
+    outline:0px;
+}
+
+/*Registratin Page*/
+
+.registration{
+    width: 400px;
+    border: 5px solid violet;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 50px 0px 50px 0px;
+    background-color: white;
+}
+#otp{
+    width: 40%;
+}
+
+/*Student DashBoard*/
+
+.img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    margin: 20px auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+}
+.dashboard{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border: 1px solid blue;
+    text-align: center;
+    background-color: blue;
+    border-radius: 10px;
+}
+.name,.course,.rollno,.batch{
+    color: yellow;
+    font-weight: bold;
+    margin-top: 5px;
+}
+#value{
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin-top: 50px;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.Attenance-percentage,.Arrears,.Internal-marks,.Assignment-marks,.Fees,.Notes,.percentage-calculator{
+   /* width: 200px; */
+   background-color: steelblue;
+   padding: 1rem;
+   border-radius: 10px;
+   color: white;
+   font-weight: bold;
+}
+
+.services div a{
+    text-decoration: none;
+    color: white;
+}
+.services div a:hover{
+    color: violet;
+}
+
+/* Courses*/
+.ug-course{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin-top: 30px;
+    column-gap: 30px;
+    row-gap: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ug-course div{
+    background-color: steelblue;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.pg-course{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    column-gap: 30px;
+    row-gap: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.pg-course div{
+    background-color: steelblue;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
